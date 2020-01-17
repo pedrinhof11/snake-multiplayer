@@ -1,0 +1,41 @@
+body {
+    background-color: cadetblue;
+    color: #fffFFF;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+}
+
+.button-shadow {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#playerName {
+    max-width: 350px;
+}
+
+
+.title{
+    font-size: 3rem;
+    padding: rem 0 1rem;
+}
+
+
+canvas {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 40px);
+    border: 5px solid #ccc;
+    background-color: #f4f4f4;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}

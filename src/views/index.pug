@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Jogo da Cobra
+
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+        link(rel="stylesheet", href="/css/estilo.css")
+        script(src="/js/socket.io.js")
+    body
+       
+        div.container#mainMenu
+            h1.title.has-text-weight-semibold.has-text-centered.has-text-white-bis='Snake Multplayer'
+            div.field
+                div.control
+                input#playerName.input(type="text", name="playerName", placeholder="Seu Nome...")
+            div
+                button.button.is-success.is-large.button-shadow#initGame="Jogar Agora"
+        div.container
+            canvas#screen.is-hidden(width=48, height=27) Seu browser não tem suporte ao elemento canvas.
+        
+        //script(src="/game.js", type="module")
+        script(src="/js/client.js", type="module")
